@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وقف كولر مياه لعابري السبيل - محمد احمد بانقا</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Tajawal', sans-serif; }
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white !important; }
+        }
+    </style>
+</head>
+<body class="bg-sky-50/40 text-slate-800 min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-l from-sky-900 via-sky-800 to-teal-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="bg-white/15 p-2.5 rounded-xl">
+                    <svg class="w-7 h-7 text-sky-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                </div>
+                <div>
+                    <div class="flex items-center gap-2">
+                        <h1 class="text-xl font-black">وقف كولر مياه لعابري السبيل</h1>
+                        <span class="bg-emerald-500/20 border border-emerald-300/30 text-emerald-100 text-[11px] px-2.5 py-0.5 rounded-full font-bold">صدقة جارية</span>
+                    </div>
+                    <p class="text-xs text-sky-200 mt-0.5">وقف خيري باسم: <strong class="text-white">محمد احمد بانقا - عمر محمد احمد بانقا</strong></p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3 no-print">
+                <button onclick="openModal('donateModal')" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-xl font-bold shadow transition flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                    تسجيل تبرع أو تحويل جديد
+                </button>
+                <button onclick="openModal('adminModal')" class="bg-sky-950 hover:bg-slate-900 text-sky-100 border border-sky-600/50 px-4 py-2 rounded-xl font-medium transition flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    لوحة المشرف
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+
+        <!-- Quranic Verse & Donation Accounts Banner -->
+        <div class="bg-white rounded-2xl shadow-sm border border-sky-100 p-6 space-y-5">
+            <div class="text-center border-b border-slate-100 pb-4">
+                <p class="text-sky-900 font-bold text-lg">قال تعالى: ﴿ وَمَا تُقَدِّمُوا لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ اللَّهِ ﴾ <span class="text-xs font-normal text-slate-500">[البقرة: 110]</span></p>
+                <p class="text-sm text-slate-600 mt-1">ساهم في توفير كولر مياه لعابري السبيل صدقة جارية عن <strong class="text-sky-900">محمد احمد بانقا</strong> و <strong class="text-sky-900">عمر محمد احمد بانقا</strong> — اللهم تقبل منا ومنكم صالح الأعمال</p>
+            </div>
+
+            <!-- Bank & Contact Details Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Bankak -->
+                <div class="bg-red-50/70 border border-red-200 rounded-xl p-4 flex flex-col justify-between">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="bg-red-700 text-white text-xs font-bold px-3 py-1 rounded-lg">بنكك (Bankak)</span>
+                        <button onclick="copyText('9351811')" class="text-xs text-red-700 hover:underline font-bold no-print">نسخ الرقم</button>
+                    </div>
+                    <div class="space-y-1 text-sm">
+                        <p class="text-slate-600">رقم الحساب: <strong class="text-slate-900 text-base tracking-wider select-all">9351811</strong></p>
+                        <p class="text-slate-600">الاسم: <strong class="text-slate-900">مؤيد الصادق</strong></p>
+                    </div>
+                </div>
+
+                <!-- My Cash -->
+                <div class="bg-amber-50/70 border border-amber-200 rounded-xl p-4 flex flex-col justify-between">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-lg">ماي كاش (My Cash)</span>
+                        <button onclick="copyText('403046196')" class="text-xs text-amber-800 hover:underline font-bold no-print">نسخ الرقم</button>
+                    </div>
+                    <div class="space-y-1 text-sm">
+                        <p class="text-slate-600">رقم الحساب: <strong class="text-slate-900 text-base tracking-wider select-all">403046196</strong></p>
+                        <p class="text-slate-600">الاسم: <strong class="text-slate-900">عبدالله موسى</strong></p>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Numbers -->
+                <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-4 flex flex-col justify-between">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="bg-emerald-700 text-white text-xs font-bold px-3 py-1 rounded-lg">أرقام واتساب للتواصل</span>
+                    </div>
+                    <div class="space-y-1 text-sm">
+                        <p class="text-slate-700 font-bold tracking-wider select-all" dir="ltr">0117865345</p>
+                        <p class="text-slate-700 font-bold tracking-wider select-all" dir="ltr">0118709192</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KPI Summary Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 flex items-center gap-4">
+                <div class="bg-emerald-100 text-emerald-800 p-3.5 rounded-xl font-bold">ر.س</div>
+                <div>
+                    <p class="text-xs text-slate-500 font-medium">إجمالي التبرعات (السعودية)</p>
+                    <h3 id="totalDonationsSAR" class="text-2xl font-black text-slate-900 mt-1">0 ر.س</h3>
+                </div>
+            </div>
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 flex items-center gap-4">
+                <div class="bg-sky-100 text-sky-800 p-3.5 rounded-xl font-bold">تحويل</div>
+                <div>
+                    <p class="text-xs text-slate-500 font-medium">إجمالي المحول للسودان</p>
+                    <h3 id="totalTransferredSAR" class="text-2xl font-black text-slate-900 mt-1">0 ر.س</h3>
+                </div>
+            </div>
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 flex items-center gap-4">
+                <div class="bg-amber-100 text-amber-800 p-3.5 rounded-xl font-bold">متبقي</div>
+                <div>
+                    <p class="text-xs text-slate-500 font-medium">الرصيد المتبقي (السعودية)</p>
+                    <h3 id="remainingSAR" class="text-2xl font-black text-emerald-700 mt-1">0 ر.س</h3>
+                </div>
+            </div>
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 flex items-center gap-4">
+                <div class="bg-teal-100 text-teal-800 p-3.5 rounded-xl font-bold">الوقف</div>
+                <div>
+                    <p class="text-xs text-slate-500 font-medium">إجمالي صندوق الوقف (جنيه)</p>
+                    <h3 id="totalSudanSDG" class="text-2xl font-black text-teal-700 mt-1">0 ج.س</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Public Records Table Section -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+            <div class="p-6 border-b border-slate-100 flex flex-wrap justify-between items-center gap-4">
+                <div>
+                    <h2 class="text-lg font-bold text-slate-900">سجل المصداقية والمتابعة المالية للوقف</h2>
+                    <p class="text-xs text-slate-500 mt-0.5">جميع المساهمات والتحويلات ومصروفات شراء وتركيب الكولر موثقة بالإيصالات</p>
+                </div>
+                <div class="flex items-center gap-3 no-print">
+                    <button onclick="window.print()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-xl font-medium transition text-sm flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                        طباعة السجل أو حفظ PDF
+                    </button>
+                </div>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-right border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-600 text-xs font-bold border-b border-slate-200">
+                            <th class="p-4">التاريخ</th>
+                            <th class="p-4">اسم المتبرع / المرجع</th>
+                            <th class="p-4">نوع العملية</th>
+                            <th class="p-4">المبلغ (ريال / جنيه)</th>
+                            <th class="p-4">سعر الصرف</th>
+                            <th class="p-4">المقابل (جنيه سوداني)</th>
+                            <th class="p-4">البند / التفاصيل</th>
+                            <th class="p-4 text-center">الإيصال أو الفاتورة</th>
+                        </tr>
+                    </thead>
+                    <tbody id="publicTableBody" class="divide-y divide-slate-100 text-sm">
+                        <!-- Dynamic Records -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Modal: Donor / Submitter Form -->
+    <div id="donateModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full shadow-2xl overflow-hidden">
+            <div class="bg-sky-900 text-white p-5 flex justify-between items-center">
+                <h3 class="font-bold text-lg">تسجيل مساهمة أو عملية في الوقف</h3>
+                <button onclick="closeModal('donateModal')" class="text-sky-200 hover:text-white font-bold text-xl">&times;</button>
+            </div>
+            <form id="submissionForm" onsubmit="handleSubmission(event)" class="p-6 space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">اسم المتبرع أو كود المشاركة (للحفاظ على الخصوصية)</label>
+                    <input type="text" id="subName" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sky-500 focus:outline-none text-sm" placeholder="مثال: فاعل خير / أبو عمر">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">نوع العملية</label>
+                        <select id="subType" onchange="toggleExchangeRateField()" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sky-500 focus:outline-none text-sm bg-white">
+                            <option value="تبرع وارد (السعودية)">تبرع وارد (ريال سعودي)</option>
+                            <option value="تبرع مباشر (السودان)">تبرع مباشر (بنكك / ماي كاش)</option>
+                            <option value="تحويل للسودان">تحويل بنكي للسودان</option>
+                            <option value="مصروف تجهيز الوقف">مصروف شراء/تركيب الكولر</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label id="amountLabel" class="block text-xs font-bold text-slate-700 mb-1">المبلغ (ريال سعودي)</label>
+                        <input type="number" id="subAmount" step="0.01" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sky-500 focus:outline-none text-sm" placeholder="0.00">
+                    </div>
+                </div>
+
+                <div id="exchangeRateContainer" class="hidden bg-sky-50/70 p-4 rounded-xl border border-sky-100 space-y-3">
+                    <div>
+                        <label class="block text-xs font-bold text-sky-900 mb-1">سعر الصرف الفعلي وقت التحويل (كم يساوي الجنيه مقابل الريال)</label>
+                        <input type="number" id="subExchangeRate" step="0.01" class="w-full px-4 py-2.5 rounded-xl border border-sky-200 bg-white focus:ring-2 focus:ring-sky-500 focus:outline-none text-sm" placeholder="مثال: 350">
+                        <p class="text-[11px] text-sky-700 mt-1">آخر سعر صرف معتمد في النظام: <span id="currentRateBadge" class="font-bold">--</span></p>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">البند / تفاصيل المساهمة</label>
+                    <select id="subProject" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sky-500 focus:outline-none text-sm bg-white">
+                        <option value="شراء كولر المياه">شراء كولر المياه</option>
+                        <option value="توصيل وتركيب وتمديدات">توصيل وتركيب وتمديدات</option>
+                        <option value="صيانة وفلاتر مياه">صيانة وفلاتر مياه</option>
+                        <option value="مساهمة عامة في الوقف">مساهمة عامة في الوقف</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">صورة إيصال التحويل (بنكك / ماي كاش / بنكي) أو الفاتورة</label>
+                    <input type="file" id="subReceipt" accept="image/*" required class="w-full text-xs text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-sky-50 file:text-sky-700 hover:file:bg-sky-100">
+                </div>
+                <div class="pt-2 flex justify-end gap-3">
+                    <button type="button" onclick="closeModal('donateModal')" class="px-4 py-2 rounded-xl text-slate-600 hover:bg-slate-100 text-sm font-medium">إلغاء</button>
+                    <button type="submit" class="bg-sky-800 hover:bg-sky-900 text-white px-6 py-2.5 rounded-xl font-bold text-sm shadow">إرسال للمشرف للمراجعة</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal: Admin Login / Dashboard -->
+    <div id="adminModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-4xl w-full shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
+            <div class="bg-slate-900 text-white p-5 flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    <h3 class="font-bold text-lg">لوحة تحكم مشرف الوقف</h3>
+                </div>
+                <button onclick="closeModal('adminModal')" class="text-slate-400 hover:text-white font-bold text-xl">&times;</button>
+            </div>
+
+            <!-- Login View -->
+            <div id="adminLoginView" class="p-8 max-w-md mx-auto w-full my-auto text-center space-y-4">
+                <div class="bg-sky-50 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto text-sky-800">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path></svg>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900">أدخل رمز الدخول السري</h4>
+                <p class="text-xs text-slate-500">الرمز الافتراضي للمشرف هو: <span class="font-bold text-sky-700">1234</span></p>
+                <form onsubmit="handleAdminLogin(event)" class="space-y-3">
+                    <input type="password" id="adminPinInput" required class="w-full text-center tracking-widest text-lg px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-sky-500 focus:outline-none" placeholder="••••">
+                    <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white py-3 rounded-xl font-bold text-sm shadow">دخول المشرف</button>
+                </form>
+            </div>
+
+            <!-- Admin Panel View -->
+            <div id="adminDashboardView" class="hidden flex-1 overflow-y-auto p-6 space-y-6">
+                <!-- Settings Bar -->
+                <div class="bg-slate-100 p-4 rounded-2xl flex flex-wrap justify-between items-center gap-4">
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 mb-1">تحديث سعر الصرف العام (ج.س)</label>
+                            <div class="flex gap-2">
+                                <input type="number" id="globalExchangeRate" step="0.01" class="px-3 py-1.5 rounded-lg border border-slate-300 text-sm w-32 bg-white" placeholder="350">
+                                <button onclick="updateGlobalRate()" class="bg-sky-700 text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-sky-800">حفظ</button>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 mb-1">تغيير رمز المشرف (PIN)</label>
+                            <div class="flex gap-2">
+                                <input type="password" id="newAdminPin" placeholder="الرمز الجديد" class="px-3 py-1.5 rounded-lg border border-slate-300 text-sm w-32 bg-white">
+                                <button onclick="changeAdminPin()" class="bg-slate-800 text-white px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-slate-700">تحديث الرمز</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="logoutAdmin()" class="text-red-600 hover:bg-red-50 px-3 py-2 rounded-xl text-xs font-bold transition">خروج من لوحة المشرف</button>
+                </div>
+
+                <!-- Pending Approvals -->
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-3 flex items-center gap-2">
+                        <span>الطلبات المعلقة بانتظار المراجعة والاعتماد</span>
+                        <span id="pendingCountBadge" class="bg-amber-100 text-amber-800 text-xs px-2.5 py-0.5 rounded-full font-bold">0</span>
+                    </h4>
+                    <div id="pendingListContainer" class="space-y-3">
+                        <!-- Pending items inserted dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Image Preview -->
+    <div id="imageModal" class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4" onclick="closeModal('imageModal')">
+        <div class="bg-white p-2 rounded-2xl max-w-2xl w-full overflow-hidden relative">
+            <button onclick="closeModal('imageModal')" class="absolute top-4 left-4 bg-slate-900 text-white w-8 h-8 rounded-full font-bold flex items-center justify-center shadow">&times;</button>
+            <img id="previewModalImg" src="" alt="الإيصال" class="w-full max-h-[80vh] object-contain rounded-xl">
+        </div>
+    </div>
+
+    <script>
+        let appData = JSON.parse(localStorage.getItem('waqf_sabeel_banqa')) || {
+            adminPin: '1234',
+            globalRate: 350,
+            records: [],
+            pending: []
+        };
+
+        function saveData() {
+            localStorage.setItem('waqf_sabeel_banqa', JSON.stringify(appData));
+        }
+
+        function copyText(text) {
+            navigator.clipboard.writeText(text);
+            alert('تم نسخ رقم الحساب: ' + text);
+        }
+
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+            if(modalId === 'adminModal') {
+                document.getElementById('adminPinInput').value = '';
+            }
+            if(modalId === 'donateModal') {
+                document.getElementById('currentRateBadge').innerText = appData.globalRate + ' ج.س';
+                document.getElementById('subExchangeRate').value = appData.globalRate;
+                toggleExchangeRateField();
+            }
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+        }
+
+        function toggleExchangeRateField() {
+            const type = document.getElementById('subType').value;
+            const container = document.getElementById('exchangeRateContainer');
+            const amountLabel = document.getElementById('amountLabel');
+            
+            if (type === 'تحويل للسودان') {
+                container.classList.remove('hidden');
+                document.getElementById('subExchangeRate').required = true;
+                amountLabel.innerText = 'المبلغ المحول (ريال سعودي)';
+            } else if (type === 'تبرع مباشر (السودان)' || type === 'مصروف تجهيز الوقف') {
+                container.classList.add('hidden');
+                document.getElementById('subExchangeRate').required = false;
+                amountLabel.innerText = 'المبلغ (جنيه سوداني)';
+            } else {
+                container.classList.add('hidden');
+                document.getElementById('subExchangeRate').required = false;
+                amountLabel.innerText = 'المبلغ (ريال سعودي)';
+            }
+        }
+
+        function handleSubmission(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById('subReceipt');
+            const file = fileInput.files[0];
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const type = document.getElementById('subType').value;
+                const amount = parseFloat(document.getElementById('subAmount').value);
+                const rate = parseFloat(document.getElementById('subExchangeRate').value) || 0;
+
+                const newEntry = {
+                    id: Date.now(),
+                    date: new Date().toISOString().split('T')[0],
+                    name: document.getElementById('subName').value,
+                    type: type,
+                    amount: amount,
+                    rate: 0,
+                    sdgAmount: 0,
+                    project: document.getElementById('subProject').value,
+                    receipt: e.target.result,
+                    status: 'pending'
+                };
+
+                if (type === 'تحويل للسودان') {
+                    newEntry.rate = rate;
+                    newEntry.sdgAmount = amount * rate;
+                } else if (type === 'تبرع مباشر (السودان)' || type === 'مصروف تجهيز الوقف') {
+                    newEntry.sdgAmount = amount;
+                }
+
+                appData.pending.push(newEntry);
+                saveData();
+                closeModal('donateModal');
+                document.getElementById('submissionForm').reset();
+                alert('جزاك الله خيراً! تم إرسال الإيصال للمشرف للمراجعة والاعتماد.');
+            };
+            if(file) {
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function handleAdminLogin(event) {
+            event.preventDefault();
+            const pin = document.getElementById('adminPinInput').value;
+            if(pin === appData.adminPin) {
+                document.getElementById('adminLoginView').classList.add('hidden');
+                document.getElementById('adminDashboardView').classList.remove('hidden');
+                document.getElementById('globalExchangeRate').value = appData.globalRate;
+                renderPendingList();
+            } else {
+                alert('رمز الدخول غير صحيح!');
+            }
+        }
+
+        function logoutAdmin() {
+            document.getElementById('adminDashboardView').classList.add('hidden');
+            document.getElementById('adminLoginView').classList.remove('hidden');
+        }
+
+        function updateGlobalRate() {
+            const newRate = parseFloat(document.getElementById('globalExchangeRate').value);
+            if(newRate > 0) {
+                appData.globalRate = newRate;
+                saveData();
+                alert('تم تحديث سعر الصرف العام بنجاح.');
+            }
+        }
+
+        function changeAdminPin() {
+            const newPin = document.getElementById('newAdminPin').value;
+            if(newPin.length >= 4) {
+                appData.adminPin = newPin;
+                saveData();
+                document.getElementById('newAdminPin').value = '';
+                alert('تم تحديث رمز المشرف بنجاح.');
+            } else {
+                alert('الرمز يجب ألا يقل عن 4 خانات.');
+            }
+        }
+
+        function approvePending(id) {
+            const index = appData.pending.findIndex(item => item.id === id);
+            if(index !== -1) {
+                const item = appData.pending.splice(index, 1)[0];
+                item.status = 'approved';
+                appData.records.unshift(item);
+                saveData();
+                renderAll();
+                renderPendingList();
+            }
+        }
+
+        function rejectPending(id) {
+            appData.pending = appData.pending.filter(item => item.id !== id);
+            saveData();
+            renderPendingList();
+        }
+
+        function renderPendingList() {
+            const container = document.getElementById('pendingListContainer');
+            document.getElementById('pendingCountBadge').innerText = appData.pending.length;
+            
+            if(appData.pending.length === 0) {
+                container.innerHTML = '<p class="text-xs text-slate-500 text-center py-6 bg-slate-50 rounded-xl">لا توجد طلبات معلقة حالياً.</p>';
+                return;
+            }
+
+            container.innerHTML = appData.pending.map(item => {
+                const isSDG = item.type === 'تبرع مباشر (السودان)' || item.type === 'مصروف تجهيز الوقف';
+                const unit = isSDG ? 'ج.س' : 'ر.س';
+                return `
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-wrap justify-between items-center gap-4">
+                    <div class="space-y-1">
+                        <div class="flex items-center gap-2">
+                            <span class="font-bold text-slate-900">${item.name}</span>
+                            <span class="text-xs bg-sky-100 text-sky-800 px-2 py-0.5 rounded-md font-medium">${item.type}</span>
+                        </div>
+                        <p class="text-xs text-slate-600">المبلغ: <strong>${item.amount.toLocaleString()} ${unit}</strong> | البند: ${item.project}</p>
+                        ${item.type === 'تحويل للسودان' ? `<p class="text-xs text-teal-700">المقابل: ${item.sdgAmount.toLocaleString()} ج.س (سعر الصرف: ${item.rate})</p>` : ''}
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <button onclick="previewImage('${item.receipt}')" class="text-xs bg-white border border-slate-300 px-3 py-1.5 rounded-lg hover:bg-slate-100 font-medium">عرض الإيصال</button>
+                        <button onclick="approvePending(${item.id})" class="text-xs bg-emerald-700 text-white px-3 py-1.5 rounded-lg hover:bg-emerald-800 font-bold">اعتماد</button>
+                        <button onclick="rejectPending(${item.id})" class="text-xs bg-red-100 text-red-700 px-3 py-1.5 rounded-lg hover:bg-red-200 font-bold">رفض</button>
+                    </div>
+                </div>
+            `}).join('');
+        }
+
+        function previewImage(src) {
+            document.getElementById('previewModalImg').src = src;
+            openModal('imageModal');
+        }
+
+        function renderAll() {
+            let totalDonationsSAR = 0;
+            let totalTransferredSAR = 0;
+            let totalSudanSDG = 0;
+
+            const tbody = document.getElementById('publicTableBody');
+            
+            if(appData.records.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" class="text-center py-8 text-slate-400">لا توجد سجلات مالية معتمدة حتى الآن. كن أول المساهمين في هذا الوقف!</td></tr>';
+            } else {
+                tbody.innerHTML = appData.records.map(r => {
+                    if(r.type === 'تبرع وارد (السعودية)') totalDonationsSAR += r.amount;
+                    if(r.type === 'تحويل للسودان') {
+                        totalTransferredSAR += r.amount;
+                        totalSudanSDG += r.sdgAmount;
+                    }
+                    if(r.type === 'تبرع مباشر (السودان)') {
+                        totalSudanSDG += r.sdgAmount;
+                    }
+                    if(r.type === 'مصروف تجهيز الوقف') {
+                        totalSudanSDG -= r.sdgAmount;
+                    }
+
+                    let badgeColor = 'bg-emerald-100 text-emerald-800';
+                    if(r.type === 'تحويل للسودان') badgeColor = 'bg-sky-100 text-sky-800';
+                    if(r.type === 'تبرع مباشر (السودان)') badgeColor = 'bg-teal-100 text-teal-800';
+                    if(r.type === 'مصروف تجهيز الوقف') badgeColor = 'bg-amber-100 text-amber-800';
+
+                    const isDirectSDG = r.type === 'تبرع مباشر (السودان)' || r.type === 'مصروف تجهيز الوقف';
+
+                    return `
+                        <tr class="hover:bg-slate-50/80 transition">
+                            <td class="p-4 text-xs text-slate-600">${r.date}</td>
+                            <td class="p-4 font-bold text-slate-900">${r.name}</td>
+                            <td class="p-4"><span class="text-xs px-2.5 py-1 rounded-lg font-bold ${badgeColor}">${r.type}</span></td>
+                            <td class="p-4 font-semibold text-slate-900">${!isDirectSDG ? r.amount.toLocaleString() + ' ر.س' : '--'}</td>
+                            <td class="p-4 text-xs text-slate-500">${r.rate > 0 ? r.rate : '--'}</td>
+                            <td class="p-4 font-semibold text-teal-700">${r.sdgAmount > 0 ? r.sdgAmount.toLocaleString() + ' ج.س' : '--'}</td>
+                            <td class="p-4 text-xs text-slate-600">${r.project}</td>
+                            <td class="p-4 text-center">
+                                <button onclick="previewImage('${r.receipt}')" class="text-sky-700 hover:text-sky-800 bg-sky-50 p-2 rounded-lg transition inline-flex items-center gap-1 text-xs font-bold">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                    عرض
+                                </button>
+                            </td>
+                        </tr>
+                    `;
+                }).join('');
+            }
+
+            document.getElementById('totalDonationsSAR').innerText = totalDonationsSAR.toLocaleString() + ' ر.س';
+            document.getElementById('totalTransferredSAR').innerText = totalTransferredSAR.toLocaleString() + ' ر.س';
+            document.getElementById('remainingSAR').innerText = (totalDonationsSAR - totalTransferredSAR).toLocaleString() + ' ر.س';
+            document.getElementById('totalSudanSDG').innerText = totalSudanSDG.toLocaleString() + ' ج.س';
+        }
+
+        // Initialize on load
+        renderAll();
+    </script>
+</body>
+</html>
